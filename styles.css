@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(229, 92%, 20%);
+}
+
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titulo {
+    color:white;
+    font-size: 32px;
+    font-family: 'Carter One', cursive;
+
+}
+
+.subtitulo{
+    color:white;
+    font-size: 20px;
+}
+input{
+    display: none;
+}
+
+input:checked+label{
+    background-color: #B2C8DF;
+    color: var(--main-color-2);
+    box-shadow: 1px1px10px var(--main-color-1);
+    
+}
+.tarjeta-de-mokepon:hover{
+    cursor:pointer;
+}
+
+.tarjetas, .tarjetas-ataques{
+    display:flex ;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 180px;
+    height: 100px;
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    color: white;    
+}
+
+#boton-mascota{
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque{
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes{
+    width: 280px;
+    background: #eee;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+#boton-reiniciar{
+    border: none;
+    color: #11468F;
+
+}
+
+.ataques{
+    display:grid ;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+#vida-jugador, #vida-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mapa {
+    border: 2px solid white
+}
+
+@media (max-width:360px) {
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }  
+    }
